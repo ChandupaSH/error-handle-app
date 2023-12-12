@@ -1,10 +1,18 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomePage from './scenes/HomePage'
 
 const App = () => {
   return (
-    <div>
-      <span>App.js</span>
-    </div>
+    
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element = { <HomePage/>} />
+        </Routes>
+      </BrowserRouter>
+     
+
+    
   )
 }
 
