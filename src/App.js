@@ -1,7 +1,7 @@
 import React from 'react'
 import {  HashRouter as Router, Route, Routes } from 'react-router-dom'
-import HomePage from './scenes/HomePage.jsx'
-import UserPage from './scenes/UserPage.jsx'
+import HomePage from './scenes/HomePage'
+import UserPage from './scenes/UserPage'
 
 const App = () => {
   return (

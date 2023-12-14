@@ -1,20 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
-import { Button, IconButton } from '@mui/material';
+import {  IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import SearchIcon from '@mui/icons-material/Search';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { sideMenuChange, sideMenuSelector } from '../slices/slice.js';
 import { useSelector, useDispatch } from 'react-redux';
-import {  useMediaQuery } from '@mui/material'
+// import {  useMediaQuery } from '@mui/material'
 
 const Navbar = () => {
-  const isTablet = useMediaQuery('(min-width: 500px )')
-  // const nbfontSize = isTablet ? '25px' : '20px'
+  // const isTablet = useMediaQuery('(min-width: 500px )')
   const isClose = useSelector(sideMenuSelector)
   const dispatch = useDispatch()
-  console.log(isClose)
   
   return (
     <div style={{
