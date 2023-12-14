@@ -6,10 +6,11 @@ import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { sideMenuChange, sideMenuSelector } from '../slices/slice.js';
 import { useSelector, useDispatch } from 'react-redux';
-// import {  useMediaQuery } from '@mui/material'
+import {  useMediaQuery } from '@mui/material'
 
 const Navbar = () => {
-  // const isTablet = useMediaQuery('(min-width: 500px )')
+  const isTablet = useMediaQuery('(min-width: 500px )')
+  const marLeft = isTablet? '10px' : '1px'
   const isClose = useSelector(sideMenuSelector)
   const dispatch = useDispatch()
   
@@ -23,7 +24,7 @@ const Navbar = () => {
         <div style={{
           display: 'flex'}}>
 
-          <div style={{display: 'flex', paddingLeft: '10px'}}>
+          <div style={{display: 'flex', paddingLeft: marLeft}}>
             <IconButton style={{margin: 'auto auto auto 10px'}} onClick={() => {
               dispatch(sideMenuChange())}}>
               {isClose? <DensityMediumIcon style={{color:'white'}} />: <CloseIcon  style={{color:'white'}} />}
