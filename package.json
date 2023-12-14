@@ -2,6 +2,7 @@
   "homepage": "https://chandupash.github.io/error-handle-app/",
   "name": "client",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
