@@ -7,15 +7,27 @@ const UserPage = () => {
   const avatarH = isTablet ? '38vh' : '25vh'
   const NavH = isTablet ? '27vh' : '18vh'
   const NavFontSize = isTablet ? '10vh' : '6vh'
+  const NavWhiteH = isTablet? '22vh' :' 15vh'
+  const TabW = isTablet? '30%' : '90%'
+  const TabH = isTablet? '30vh' : '25vh'
+
+  const buttonStyle = {
+    width: TabW,
+    height: TabH,
+    marginTop: '5%',
+    borderRadius: '15px',
+    border: 'none',
+    fontSize: '15px',
+    backgroundColor: '#3B1237 ',
+    color: 'white'
+  }
   
   return (
     <div style={{
-      height: '100vh',
-      // background: 'rgb(255,173,253)',
+      paddingBottom: '20px',
       background: 'linear-gradient(0deg, rgba(255,173,253,1) 0%, rgba(177,177,177,1) 100%)'
     }}>
       <div style={{
-      //  background: 'rgb(43,0,46)',
        background: 'linear-gradient(90deg, rgba(43,0,46,1) 0%, rgba(121,9,81,1) 45%, rgba(145,100,143,1) 100%)',
         display:'flex',
         justifyContent:'space-between',
@@ -34,7 +46,7 @@ const UserPage = () => {
         
         <Avatar
           style={{
-            border: '3px solid white',
+            border: '5px solid white',
             transform:'translateY(20%)',
             marginRight: '9%'}}
           alt="Remy Sharp"
@@ -42,6 +54,51 @@ const UserPage = () => {
           sx={{ width: avatarW, height: avatarH }}
         />
       </div>
+
+
+      <div style={{
+        backgroundColor: 'white',
+        height: NavWhiteH,
+        color: '#460035 '
+      }}>
+        <div style={{
+          width: '43%',}}>
+            <span style={{
+              paddingLeft: '10px', 
+              fontSize:'20px',
+              }}>Today Workout</span><br/>
+
+              <div style={ { 
+                display: 'flex',
+                
+                flexWrap: 'wrap',
+                
+                marginTop: '10px',
+                color: '#5B7000 '
+                }}>
+                  <span style={{marginLeft: '20px' }}>chest</span>
+                  <span style={{marginLeft: '20px' }}>back</span>
+                  <span style={{marginLeft: '20px' }}>tricep</span>
+                  <span style={{marginLeft: '20px' }}>cardio</span>
+              </div>
+
+            
+        </div>
+        
+      </div>
+
+      <div style={{
+        display: 'flex',
+        justifyContent:'space-around',
+        flexWrap: 'wrap',
+        marginTop: '10px',
+      }}>
+        <button style={buttonStyle} onClick={() => {}}>Today Workout</button>
+        <button style={buttonStyle} onClick={() => {}}>Mark Attendance</button>
+        <button style={buttonStyle} onClick={() => {}}>My Workout</button>
+        <button style={buttonStyle} onClick={() => {}}>Meal Plan</button>
+      </div>
+
 
 
 
