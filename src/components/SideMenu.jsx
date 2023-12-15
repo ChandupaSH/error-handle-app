@@ -2,9 +2,11 @@ import { Box, useMediaQuery } from '@mui/material'
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { sideMenuSelector } from '../slices/slice';
+import { useNavigate } from 'react-router-dom';
 
 
 const SideMenu = () => {
+    const navigate = useNavigate()
     const isTablet = useMediaQuery('(min-width: 600px )')
     const widthIs = isTablet? '50%':'100%'
     const leftIs = isTablet? '-50%':'-100%'
@@ -36,7 +38,7 @@ const SideMenu = () => {
                 listStyle: 'none',
                 height: '100%'
             }}>
-                <li onClick={() => {}} style={liStyle}>My Account</li>
+                <li onClick={() => {navigate('/user')}} style={liStyle}>My Account</li>
                 {/* <li onClick={() => {}} style={liStyle}>Suppliments</li> */}
                 <li onClick={() => {}} style={liStyle}>Workouts</li>
                 <li onClick={() => {}} style={liStyle}>Trainers</li>

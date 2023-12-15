@@ -7,8 +7,10 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { sideMenuChange, sideMenuSelector } from '../slices/slice.js';
 import { useSelector, useDispatch } from 'react-redux';
 import {  useMediaQuery } from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const isTablet = useMediaQuery('(min-width: 500px )')
   const marLeft = isTablet? '10px' : '1px'
   const marRight = isTablet ? '20px' : '10px'
@@ -46,7 +48,7 @@ const Navbar = () => {
             justifyContent: 'center'}}>
               
               
-              <IconButton style={{margin: `auto ${marRight} auto auto`}}>
+              <IconButton onClick={() => {navigate('/user')}} style={{margin: `auto ${marRight} auto auto`}}>
                 <Person2OutlinedIcon  style={{color:'#590044'}}></Person2OutlinedIcon>
               </IconButton>
               <IconButton style={{margin: `auto ${marRight} auto auto`}}>
