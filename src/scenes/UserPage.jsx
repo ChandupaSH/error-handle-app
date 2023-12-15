@@ -1,7 +1,9 @@
 import { Avatar, useMediaQuery } from '@mui/material'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const UserPage = () => {
+  const navigate = useNavigate()
   const isTablet = useMediaQuery('(min-width: 600px )')
   const avatarW = isTablet ? '38vh' : '25vh'
   const avatarH = isTablet ? '38vh' : '25vh'
@@ -36,11 +38,11 @@ const UserPage = () => {
         <div style={{
           color: 'white',
           marginLeft: '20px',
-          marginTop: '30px'}}>
+          marginTop: '20px'}}>
 
           <span style={{
             fontSize:NavFontSize,
-            marginTop: '90px'}}>Jessica</span><br/>
+            marginTop: '10px'}}>Jessica</span><br/>
           <span style={{fontSize: '3vh'}}>16371</span>
         </div>
         
@@ -93,9 +95,9 @@ const UserPage = () => {
         flexWrap: 'wrap',
         marginTop: '10px',
       }}>
-        <button style={buttonStyle} onClick={() => {}}>Today Workout</button>
-        <button style={buttonStyle} onClick={() => {}}>Mark Attendance</button>
-        <button style={buttonStyle} onClick={() => {}}>My Workout</button>
+        <button style={buttonStyle} onClick={() => {navigate('/todayw')}}>Today Workout</button>
+        <button style={buttonStyle} onClick={() => {navigate('/qr')}}>Mark Attendance</button>
+        <button style={buttonStyle} onClick={() => {navigate('/workout')}}>My Workout</button>
         <button style={buttonStyle} onClick={() => {}}>Meal Plan</button>
       </div>
 
