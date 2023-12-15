@@ -56,14 +56,14 @@ const QrScanner = () => {
   });
 
   return (
-    <div style={{}} >
+    <div style={{height: '100%'}} >
       <h2 style={{textAlign: 'center' ,color: '#3B1237'}}>Scan The QR Code</h2>
       <video ref={videoRef} autoPlay playsInline muted 
       style={{
         border: '3px solid red', 
         width: widthIs,
         marginLeft: '10%',
-        marginTop: '37%'}}
+        marginTop: '10%'}}
         />
       <canvas ref={canvasRef} style={{ display: 'none' }} />
 

@@ -11,7 +11,8 @@ const QrPage = () => {
       backgroundColor: '#FFC6F9 ',
       display: 'flex',
       justifyItems: 'center',
-      height: '100vh'}}>       
+      height: '80vh'
+      }}>       
         <QrScanner style={{widthIs}}/>
     </div>
   )
