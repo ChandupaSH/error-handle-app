@@ -53,7 +53,7 @@ const QrScanner = () => {
 
   useEffect(() => {
     handleScan();
-  }, []);
+  }, [handleScan]);
 
   return (
     <div style={{}} >
@@ -67,10 +67,9 @@ const QrScanner = () => {
         />
       <canvas ref={canvasRef} style={{ display: 'none' }} />
 
-      {
-        result ? 
-        <span style={{color :'#3B1237', margin: '10%'}}>{result}</span> : null
-      }
+      
+        <span style={{color :'#3B1237', margin: '10%'}}>result:{result}</span>
+      
     </div>
   );
 };
