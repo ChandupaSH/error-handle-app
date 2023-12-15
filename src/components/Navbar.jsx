@@ -11,6 +11,7 @@ import {  useMediaQuery } from '@mui/material'
 const Navbar = () => {
   const isTablet = useMediaQuery('(min-width: 500px )')
   const marLeft = isTablet? '10px' : '1px'
+  const marRight = isTablet ? '20px' : '10px'
   const isClose = useSelector(sideMenuSelector)
   const dispatch = useDispatch()
   
@@ -19,7 +20,7 @@ const Navbar = () => {
     //   borderColor: 'black',
       display: 'flex',
       justifyContent: 'space-between',
-      backgroundColor : '#253938 '
+      backgroundColor : '#E8B5DC'
       }}>
         <div style={{
           display: 'flex'}}>
@@ -27,14 +28,14 @@ const Navbar = () => {
           <div style={{display: 'flex', paddingLeft: marLeft}}>
             <IconButton style={{margin: 'auto auto auto 10px'}} onClick={() => {
               dispatch(sideMenuChange())}}>
-              {isClose? <DensityMediumIcon style={{color:'white'}} />: <CloseIcon  style={{color:'white'}} />}
+              {isClose? <DensityMediumIcon style={{color:'#590044'}} />: <CloseIcon  style={{color:'#590044'}} />}
             </IconButton>
           </div>
           
           {/* <img src='/logo.png' style={{height: '100px'}} /> */}
           <div style={{display: 'flex'}}>
-          <h2 style={{color: 'white', marginLeft: '10px', }}>Muscle</h2>
-          <h2 style={{color: '#B97E00' , marginLeft: '5px'}}>Best</h2>
+          <h2 style={{color: '#590044', marginLeft: '10px', }}>Muscle</h2>
+          <h2 style={{color: 'white' , marginLeft: '5px'}}>Best</h2>
           </div>
           
         </div>
@@ -45,11 +46,11 @@ const Navbar = () => {
             justifyContent: 'center'}}>
               
               
-              <IconButton style={{margin: 'auto 20px auto auto'}}>
-                <Person2OutlinedIcon  style={{color:'white'}}></Person2OutlinedIcon>
+              <IconButton style={{margin: `auto ${marRight} auto auto`}}>
+                <Person2OutlinedIcon  style={{color:'#590044'}}></Person2OutlinedIcon>
               </IconButton>
-              <IconButton style={{margin: 'auto 20px auto auto'}}>
-                <ShoppingCartOutlinedIcon  style={{color:'white'}}></ShoppingCartOutlinedIcon>
+              <IconButton style={{margin: `auto ${marRight} auto auto`}}>
+                <ShoppingCartOutlinedIcon  style={{color:'#590044'}}></ShoppingCartOutlinedIcon>
               </IconButton>
           
         </div>
