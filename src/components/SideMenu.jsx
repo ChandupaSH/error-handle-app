@@ -28,7 +28,7 @@ const SideMenu = () => {
     transform:close, 
     transition: '0.2s',
     width: widthIs,
-    backgroundColor: '#51003D',
+    backgroundColor: '#3F0038',
     opacity: '0.95'
     }}>
         <Box sx={{
