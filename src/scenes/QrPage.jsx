@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import QrScanner from '../components/QrScanner'
 import {  useMediaQuery } from '@mui/material'
 import { useSelector } from 'react-redux'

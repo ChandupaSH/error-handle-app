@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import jsQR from 'jsqr';
 import { useMediaQuery } from '@mui/material'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import {  qrresultadd } from '../slices/slice';
 
 
