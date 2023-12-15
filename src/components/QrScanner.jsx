@@ -1,13 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import jsQR from 'jsqr';
 import { useMediaQuery } from '@mui/material'
-// import { useDispatch, useSelector } from 'react-redux';
-// import { qrresultSelector, qrresultadd } from '../slices/slice';
 
 
 const QrScanner = () => {
-//   const dispatch = useDispatch()
-//   const resultSelector = useSelector(qrresultSelector)
   const isTablet = useMediaQuery('(min-width: 500px )')
   const widthIs = isTablet? '50%':'80%'
   const videoRef = useRef(null);
@@ -32,7 +28,6 @@ const QrScanner = () => {
     const canvas = canvasRef.current;
     
     if (!video.videoWidth || !video.videoHeight) {
-      // Wait for video dimensions to be available
       requestAnimationFrame(handleScan);
       return;
     }
@@ -50,7 +45,6 @@ const QrScanner = () => {
 
     if (code) {
       setResult(code.data);
-      // dispatch(qrresultadd(code.data))
       
     }
 
