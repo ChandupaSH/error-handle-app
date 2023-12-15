@@ -53,7 +53,7 @@ const QrScanner = () => {
 
   useEffect(() => {
     handleScan();
-  }, [handleScan]);
+  }, []);
 
   return (
     <div style={{}} >
