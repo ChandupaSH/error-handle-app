@@ -1,11 +1,9 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar';
 import SideMenu from '../components/SideMenu';
 import SlideShow from '../components/SlideShow';
 
 const HomePage = () => {
-  const navigate = useNavigate();
 
   return (
     <div>
@@ -18,7 +16,7 @@ const HomePage = () => {
 
        
       
-      <button onClick={()=>{navigate('/user')}}>User Page</button>
+      
     </div>
   )
 }

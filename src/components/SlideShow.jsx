@@ -102,7 +102,7 @@ const SlideShow = () => {
       <img style={{ 
         width: '100%', 
         position: 'relative',
-        height: '35vh',
+        height: '38vh',
         overflow: 'hidden' }} alt='slide' src={slideImage}/>
     </div>
   );
