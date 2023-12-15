@@ -11,11 +11,11 @@ const UserPage = () => {
   return (
     <div style={{
       height: '100vh',
-      background: 'rgb(255,173,253)',
+      // background: 'rgb(255,173,253)',
       background: 'linear-gradient(0deg, rgba(255,173,253,1) 0%, rgba(177,177,177,1) 100%)'
     }}>
       <div style={{
-       background: 'rgb(43,0,46)',
+      //  background: 'rgb(43,0,46)',
        background: 'linear-gradient(90deg, rgba(43,0,46,1) 0%, rgba(121,9,81,1) 45%, rgba(145,100,143,1) 100%)',
         display:'flex',
         justifyContent:'space-between',
