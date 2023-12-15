@@ -1,8 +1,11 @@
 import { Avatar, useMediaQuery } from '@mui/material'
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { qrresultSelector } from '../slices/slice.js';
 
 const UserPage = () => {
+  const qrResult = useSelector(qrresultSelector)
   const navigate = useNavigate()
   const isTablet = useMediaQuery('(min-width: 600px )')
   const avatarW = isTablet ? '38vh' : '25vh'
@@ -96,9 +99,13 @@ const UserPage = () => {
         marginTop: '10px',
       }}>
         <button style={buttonStyle} onClick={() => {navigate('/todayw')}}>Today Workout</button>
-        <button style={buttonStyle} onClick={() => {navigate('/qr')}}>Mark Attendance</button>
+        {
+          qrResult? null :
+          <button style={buttonStyle} onClick={() => {navigate('/qr')}}>Mark Attendance</button>
+        }
         <button style={buttonStyle} onClick={() => {navigate('/workout')}}>My Workout</button>
         <button style={buttonStyle} onClick={() => {}}>Meal Plan</button>
+        <button style={buttonStyle} onClick={() => {}}>Delete Account</button>
       </div>
 
 

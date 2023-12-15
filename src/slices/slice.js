@@ -13,16 +13,16 @@ const allDataSlice = createSlice({
             state.sideMenuOff ? state.sideMenuOff = false :  state.sideMenuOff = true
         },
 
-        // qrresultadd : (state,action) => {
-        //     state.qrresult = action.payload
-        // }
+        qrresultadd : (state,action) => {
+            state.qrresult = action.payload
+        }
         
     }
 })
 
 
 export const sideMenuSelector = (state) => state.allData.sideMenuOff
-// export const qrresultSelector = (state) => state.allData.qrresult
+export const qrresultSelector = (state) => state.allData.qrresult
 export const {sideMenuChange, qrresultadd} = allDataSlice.actions
 export default allDataSlice.reducer
 
