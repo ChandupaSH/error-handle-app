@@ -1,4 +1,4 @@
-import { IconButton, useMediaQuery } from '@mui/material'
+import { IconButton} from '@mui/material'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { sideMenuChange, sideMenuSelector } from '../slices/slice'
@@ -14,19 +14,19 @@ const Navlanding = () => {
   return (
     <div style={{width: '100%',margin: 0}}>
 
-        <img src='/m_nav_rect.png' 
+        <img src='/m_nav_rect.png' alt='m_nav_rect.png'
             style={{
               
                 width:'100%',
                 position: 'absolute',
                 right: '0',}}/>
 
-        <img src='/m_nav_curve.png' 
+        <img src='/m_nav_curve.png' alt='m_nav_curve.png'
             style={{
                 width:'100%',
                 position: 'absolute'}}/>
 
-        <img src='/nav_girl2.png' 
+        <img src='/nav_girl2.png'  alt='nav_girl2.png'
             style={{
                 margin: '0',
                 height: '48%',
@@ -80,7 +80,7 @@ const Navlanding = () => {
           }}>Dream Body</span>
         </div>
 
-        <img src='/m_nav_circles.png' style={{
+        <img src='/m_nav_circles.png' alt='m_nav_circles' style={{
           position: 'absolute',
           width: '20vh',
           top: '42vh',
