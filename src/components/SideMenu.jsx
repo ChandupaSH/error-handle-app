@@ -24,12 +24,14 @@ const SideMenu = () => {
   return (
     <div style={{zIndex: '10000',
     position: 'absolute',
+    top: '9%',
     left: leftIs,
     transform:close, 
     transition: '0.2s',
     width: widthIs,
-    backgroundColor: '#3F0038',
-    opacity: '0.95'
+    backgroundColor: 'black',
+    opacity: '0.85',
+    borderRadius: '30px'
     }}>
         <Box sx={{
             height: '90vh',
