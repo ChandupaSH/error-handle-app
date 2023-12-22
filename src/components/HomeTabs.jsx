@@ -116,19 +116,22 @@ const HomeTabs = () => {
             <img src='/m_workout_1.png' alt='m_workout_1' style={{
                 width: '80%',
                 position: 'relative',
-                left: '10%'
+                left: '10%',
+                maxHeight: '53vw'
             }}/>
             <img src='/m_workout_2.png' alt='m_workout_2' style={{
                 width: '80%',
                 position: 'relative',
                 left: '10%',
-                top: '2vh'
+                top: '2vh',
+                maxHeight: '53vw'
             }}/>
             <img src='/m_workout_3.png' alt='m_workout_3' style={{
                 width: '80%',
                 position: 'relative',
                 left: '10%',
-                top: '4vh'
+                top: '4vh',
+                maxHeight: '53vw'
             }}/>
         </div>
       </div>
