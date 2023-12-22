@@ -10,7 +10,7 @@ const HomeTabs = () => {
     }}>
       
       <div style={{
-        position: 'relative',marginTop: '4%'}}>
+        position: 'relative',marginTop: '20px'}}>
         <img src='/m_tab1.png' alt='m_tab1' style={{
             width: '90%',
             position: 'absolute',
@@ -67,7 +67,7 @@ const HomeTabs = () => {
       </div>
 
       <div style={{
-        position: 'relative',marginTop: '25%'}}>
+        position: 'relative',top: '95px'}}>
         <img src='/m_tab2_f2.png' alt='/m_tab2_f2' style={{
             width: '90%',
             position: 'absolute',
@@ -96,7 +96,7 @@ const HomeTabs = () => {
       </div>
 
       <div style={{
-        position: 'relative', top: '14.5%'}}>
+        position: 'relative', top: '400px'}}>
         <img src='/m_tab3_f2.png' alt='m_tab3_f2' style={{
             width: '90%',
             position: 'absolute',
@@ -106,7 +106,7 @@ const HomeTabs = () => {
         <div style={{
             position: 'relative',
             width: '100%',
-            top: '19vh',
+            top: '110px',
             display: 'flex',
             flexWrap: 'wrap',
             
@@ -132,7 +132,7 @@ const HomeTabs = () => {
       </div>
 
       <div style={{
-        position: 'relative', top: '24.4%'}}>
+        position: 'relative', top: '590px'}}>
         <img src='/m_tab4.png' alt='m_tab4' style={{
             width: '90%',
             position: 'absolute',
@@ -143,7 +143,7 @@ const HomeTabs = () => {
             width: '90%', 
             position:'relative',
             left: '5%',
-            top: '24vh'
+            top: '150px'
             }}>
             <img style={{width: '90%',left: '5%',position:'relative'}} src='/m_meal_tab1.png' alt='m_meal_tab1'/> 
             <img style={{width: '90%',left: '5%',position:'relative',top:'1vh'}} src='/m_meal_tab2.png' alt='m_meal_tab2' /> 

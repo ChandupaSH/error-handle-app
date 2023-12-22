@@ -11,12 +11,13 @@ const Navlanding = () => {
   const isClose = useSelector(sideMenuSelector)
   const dispatch = useDispatch()
 
+ 
+
   return (
     <div style={{width: '100%',margin: 0}}>
 
         <img src='/m_nav_rect.png' alt='m_nav_rect.png'
             style={{
-              
                 width:'100%',
                 position: 'absolute',
                 right: '0',}}/>
@@ -29,9 +30,8 @@ const Navlanding = () => {
         <img src='/nav_girl2.png'  alt='nav_girl2.png'
             style={{
                 margin: '0',
-                height: '48%',
+                height: '48vh',
                 position: 'absolute',
-                top: '11.5%',
                 right: '0',
                 overflow: 'hidden'}}/>
 
