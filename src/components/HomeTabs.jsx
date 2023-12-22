@@ -44,11 +44,13 @@ const HomeTabs = () => {
 
                 <img src='/imgSlide2.jpg' alt='imgSlide2' style={{
                     width: '30%',
-                    borderRadius: '7%'
+                    borderRadius: '7%',
+                    maxHeight: '80px'
                 }}/>
                 <img src='/imgSlide3.jpg' alt='imgSlide3' style={{
                     width: '30%',
-                    borderRadius: '7%'
+                    borderRadius: '7%',
+                    maxHeight: '80px'
                 }}/>
 
                 <div style={{
