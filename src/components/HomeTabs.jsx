@@ -126,21 +126,21 @@ const HomeTabs = () => {
             width: '80%',
             position: 'relative',
             left: '10%',
-            // maxHeight: '53vw'
+            height: '45.945vw'
         }}/>
         <img src='/m_workout_2.png' alt='m_workout_2' style={{
             width: '80%',
             position: 'relative',
             left: '10%',
             top: '2vh',
-            // maxHeight: '53vw'
+            height: '45.945vw'
         }}/>
         <img src='/m_workout_3.png' alt='m_workout_3' style={{
             width: '80%',
             position: 'relative',
             left: '10%',
             top: '4vh',
-            // maxHeight: '53vw'
+            height: '45.945vw'
         }}/>
     </div>
   </div>
