@@ -9,7 +9,7 @@ const HomeTabs = () => {
         height: '300vh',
     }}>
       
-      <div style={{
+      {/* <div style={{
         position: 'relative',marginTop: '20px'}}>
         <img src='/m_tab1.png' alt='m_tab1' style={{
             width: '90%',
@@ -108,7 +108,7 @@ const HomeTabs = () => {
         <div style={{
             position: 'relative',
             width: '100%',
-            top: '110px',
+            top: '130px',
             display: 'flex',
             flexWrap: 'wrap',
             
@@ -137,7 +137,7 @@ const HomeTabs = () => {
       </div>
 
       <div style={{
-        position: 'relative', top: '590px'}}>
+        position: 'relative', top: '145vw'}}>
         <img src='/m_tab4.png' alt='m_tab4' style={{
             width: '90%',
             position: 'absolute',
@@ -155,7 +155,7 @@ const HomeTabs = () => {
             <img style={{width: '90%',left: '5%',position:'relative',top:'2vh'}} src='/m_meal_tab3.png' alt='m_meal_tab3' /> 
         </div>
       
-      </div>
+      </div> */}
 
       
 
