@@ -72,6 +72,80 @@ const HomeTabs = () => {
     </div>
 
   </div>
+
+<div style={{
+     backgroundImage: `url(${process.env.PUBLIC_URL}/m_tab2_f.png)`,
+     marginTop: '20px',
+     width: '90%',
+     backgroundSize: 'cover',
+     backgroundRepeat: 'no-repeat',
+     height: '84.5vw',
+     marginLeft: '5%'
+}}>
+    
+    <span style={{
+        position: 'relative',
+        top: '2vh',
+        fontSize: '4vh',
+        left: '13%',
+        color: 'white'
+    }}>Join Us</span>
+
+    <button style={{
+        position: 'relative',
+        color: 'white',
+        backgroundColor: '#352B55',
+        border: 'none',
+        borderRadius: '10%',
+        width: '40%',
+        height: '5vh',
+        top: '20%',
+        left: '24%',
+        fontSize: '3vh'
+    }}>Register</button>
+  </div>
+
+<div style={{
+     backgroundImage: `url(${process.env.PUBLIC_URL}/m_tab3_f2.png)`,
+     marginTop: '20px',
+     width: '90%',
+     backgroundSize: 'cover',
+     backgroundRepeat: 'no-repeat',
+     height: '202.1875vw',
+     marginLeft: '5%'
+}}>
+    <div style={{
+        position: 'relative',
+        width: '100%',
+        top: '20%',
+        display: 'flex',
+        flexWrap: 'wrap',
+        
+    }}>
+        <img src='/m_workout_1.png' alt='m_workout_1' style={{
+            width: '80%',
+            position: 'relative',
+            left: '10%',
+            // maxHeight: '53vw'
+        }}/>
+        <img src='/m_workout_2.png' alt='m_workout_2' style={{
+            width: '80%',
+            position: 'relative',
+            left: '10%',
+            top: '2vh',
+            // maxHeight: '53vw'
+        }}/>
+        <img src='/m_workout_3.png' alt='m_workout_3' style={{
+            width: '80%',
+            position: 'relative',
+            left: '10%',
+            top: '4vh',
+            // maxHeight: '53vw'
+        }}/>
+    </div>
+  </div>
+  
+
       
       
 {/* <div style={{
