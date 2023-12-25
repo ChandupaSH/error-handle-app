@@ -13,7 +13,7 @@ const HomeTabs = () => {
     width: '90%',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '370px',
+    height: '99vw',
     marginLeft: '5%'
  
    
@@ -31,7 +31,7 @@ const HomeTabs = () => {
         position: 'relative',
         width: '90%',
         left: '5%',
-        top: '50px'
+        top: '10%'
     }}>
         <img src='/imgSlide1.jpg' alt='imgSlide1' style={{
             width: '100%',
