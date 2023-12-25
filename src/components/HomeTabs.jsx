@@ -74,49 +74,6 @@ const HomeTabs = () => {
   </div>
       
       
-      
-
-    </div>
-  )
-}
-
-export default HomeTabs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {/* <div style={{
     position: 'relative',marginTop: '20px'}}>
     <img src='/m_tab1.png' alt='m_tab1' style={{
@@ -264,3 +221,45 @@ export default HomeTabs
     </div>
   
   </div> */}
+      
+
+    </div>
+  )
+}
+
+export default HomeTabs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
