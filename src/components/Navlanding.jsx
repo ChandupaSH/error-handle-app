@@ -13,7 +13,7 @@ const Navlanding = () => {
 
   const { scrollYProgress} = useScroll()
   const opacity = useTransform(scrollYProgress,[0,0.3],[1, 0])
-  const width = useTransform(scrollYProgress,[0,0.2],[100, 120])
+  // const width = useTransform(scrollYProgress,[0,0.2],[100, 120])
 
  
 
