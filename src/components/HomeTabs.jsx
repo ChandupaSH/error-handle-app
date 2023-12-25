@@ -13,7 +13,6 @@ const HomeTabs = () => {
     width: '90%',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    width: '90%', 
     height: '370px',
     marginLeft: '5%'
  
