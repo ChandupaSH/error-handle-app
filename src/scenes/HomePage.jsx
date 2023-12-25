@@ -18,10 +18,6 @@ const HomePage = () => {
 
       
 
-      {/* <div style={{width: '100%' }}>
-          <SlideShow></SlideShow>
-        </div> */}
-
        
       
       

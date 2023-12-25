@@ -19,13 +19,13 @@ const Navlanding = () => {
         <img src='/nav_l_full.png' alt='m_nav_rect.png'
             style={{
                 width:'100%',
-                position: 'absolute',
+                // position: 'absolute',
                 right: '0',}}/>
 
 
         <div style={{
           display: 'flex',
-          position: 'relative',
+          position: 'absolute',
           top: '1.5vh' ,
           marginLeft: '2vh'
           }}>
