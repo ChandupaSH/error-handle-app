@@ -9,8 +9,11 @@ const HomePage = () => {
   
 
   return (
-    <div style={{backgroundColor:'#FFC0C0',height: '500vh'}}>
-      {/* <Navbar></Navbar> */}
+    <div style={{
+      backgroundColor:'#FFC0C0',
+      // height: '400vh'
+      }}>
+
       <Navlanding ></Navlanding>
       <HomeTabs></HomeTabs>
     

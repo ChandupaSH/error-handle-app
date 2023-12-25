@@ -12,6 +12,7 @@ const SideMenu = () => {
     const leftIs = isTablet? '-50%':'-100%'
     const isClose = useSelector(sideMenuSelector)
     const close = isClose? 'translateX(0)' : 'translateX(100%)'
+    const position = isClose? 'absolute' : 'fixed'
     const liStyle = {
         fontSize: 'x-large',
         padding: '10% 0 10px 20px',
@@ -23,12 +24,13 @@ const SideMenu = () => {
     
   return (
     <div style={{zIndex: '10000',
-    position: 'absolute',
+    position: position,
     top: '9%',
     left: leftIs,
     transform:close, 
     transition: '0.2s',
     width: widthIs,
+    height: '100vh',
     backgroundColor: 'black',
     opacity: '0.85',
     borderRadius: '30px'
