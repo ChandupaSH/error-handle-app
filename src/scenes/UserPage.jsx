@@ -1,113 +1,163 @@
-import { Avatar, useMediaQuery } from '@mui/material'
+import { Avatar } from '@mui/material'
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
-import { qrresultSelector } from '../slices/slice.js';
+// import { useSelector } from 'react-redux'
+// import { useNavigate } from 'react-router-dom'
+// import { qrresultSelector } from '../slices/slice.js';
 
 const UserPage = () => {
-  const qrResult = useSelector(qrresultSelector)
-  const navigate = useNavigate()
-  const isTablet = useMediaQuery('(min-width: 600px )')
-  const avatarW = isTablet ? '38vh' : '25vh'
-  const avatarH = isTablet ? '38vh' : '25vh'
-  const NavH = isTablet ? '27vh' : '18vh'
-  const NavFontSize = isTablet ? '10vh' : '6vh'
-  const NavWhiteH = isTablet? '22vh' :' 15vh'
-  const TabW = isTablet? '30%' : '90%'
-  const TabH = isTablet? '30vh' : '25vh'
+  // const qrResult = useSelector(qrresultSelector)
+  // const navigate = useNavigate()
+  // const isTablet = useMediaQuery('(min-width: 600px )')
+  
 
-  const buttonStyle = {
-    width: TabW,
-    height: TabH,
-    marginTop: '5%',
-    borderRadius: '15px',
-    border: 'none',
-    fontSize: '15px',
-    backgroundColor: '#3B1237 ',
-    color: 'white'
-  }
   
   return (
     <div style={{
-      paddingBottom: '20px',
-      background: 'linear-gradient(0deg, rgba(255,173,253,1) 0%, rgba(177,177,177,1) 100%)'
+      backgroundColor: '#E3B6C9',
+      height: '190vh',
     }}>
+
       <div style={{
-       background: 'linear-gradient(90deg, rgba(43,0,46,1) 0%, rgba(121,9,81,1) 45%, rgba(145,100,143,1) 100%)',
-        display:'flex',
-        justifyContent:'space-between',
-        height: NavH}}>
+      }}>
+        <img src="/m_user_nav.png" alt="m_user_nav" style={{
+          width: '100%',
+        }}
+        />
+        <span style={{
+          fontSize: '35px',
+          position: 'absolute',
+          top: '18px',
+          color: 'white',
+          left: '15vw',
+        }}>Jessica</span><br/>
+
+        <span style={{
+          fontSize: '20px',
+          position: 'absolute',
+          top: '68px',
+          color: 'white',
+          left: '15vw',
+          
+        }}>24189</span>
 
         <div style={{
-          color: 'white',
-          marginLeft: '20px',
-          marginTop: '20px'}}>
+          position: 'absolute' ,
+          // border: '1px solid black',
+          display: 'flex',
+          width: '30vw',
+          left: '65vw',
+          flexWrap: 'wrap',
+          top: '50px',
+          rowGap: '8px'
+          }}>
+          <span style={{
+            color: '#F0F500',
+            fontSize: '14px',
+            width: '15vw'
+          }}>Chest</span>
 
           <span style={{
-            fontSize:NavFontSize,
-            marginTop: '10px'}}>Jessica</span><br/>
-          <span style={{fontSize: '3vh'}}>16371</span>
+            color: '#F0F500',
+            fontSize: '14px',
+            width: '15vw'
+          }}>Back</span>
+
+          <span style={{
+            color: '#F0F500',
+            fontSize: '14px',
+            width: '15vw'
+          }}>Bicep</span>
         </div>
-        
-        <Avatar
-          style={{
-            border: '5px solid white',
-            transform:'translateY(20%)',
-            marginRight: '9%'}}
-          alt="Remy Sharp"
-          src="/avatar.jpg"
-          sx={{ width: avatarW, height: avatarH }}
-        />
-      </div>
 
-
-      <div style={{
-        backgroundColor: 'white',
-        height: NavWhiteH,
-        color: '#460035 '
-      }}>
         <div style={{
-          width: '43%',}}>
-            <span style={{
-              paddingLeft: '10px', 
-              fontSize:'20px',
-              }}>Today Workout</span><br/>
-
-              <div style={ { 
-                display: 'flex',
-                
-                flexWrap: 'wrap',
-                
-                marginTop: '10px',
-                color: '#5B7000 '
-                }}>
-                  <span style={{marginLeft: '20px' }}>chest</span>
-                  <span style={{marginLeft: '20px' }}>back</span>
-                  <span style={{marginLeft: '20px' }}>tricep</span>
-                  <span style={{marginLeft: '20px' }}>cardio</span>
-              </div>
-
-            
+          position: 'absolute',
+          left: '65vw',
+          top: '40.5vw'
+        }}> 
+          <Avatar
+            style={{
+              border: '3px solid white',
+            }}
+            alt="Remy Sharp"
+            src="/avatar.jpg"
+            sx={{ width: '30vw', height: '30vw' }}
+          />
         </div>
+
         
-      </div>
 
+      </div>
+      
       <div style={{
-        display: 'flex',
-        justifyContent:'space-around',
-        flexWrap: 'wrap',
-        marginTop: '10px',
-      }}>
-        <button style={buttonStyle} onClick={() => {navigate('/todayw')}}>Today Workout</button>
-        {
-          qrResult? null :
-          <button style={buttonStyle} onClick={() => {navigate('/qr')}}>Mark Attendance</button>
-        }
-        <button style={buttonStyle} onClick={() => {navigate('/workout')}}>My Workout</button>
-        <button style={buttonStyle} onClick={() => {}}>Meal Plan</button>
-        <button style={buttonStyle} onClick={() => {}}>Delete Account</button>
-      </div>
+        position: 'absolute',
+        top: '58.92vw',
+        width: '100%'
+        }}>
 
+        <div style={{
+          position: 'relative',
+          left: '5.9vw',
+          width: '90vw'
+          }}>
+          <img src="/m_user_tab1.png" alt="" style={{
+            maxWidth: '90vw',
+            position: 'absolute'
+            }} />
+
+            <div style={{
+              width: '80vw',
+              position: 'relative',
+              top: '38.14vw',
+              left: '5.5%',
+              display:'flex',
+              justifyContent: 'space-between'
+            }}>
+              <img src="/m_user_pro_tab1.png" alt="" style={{
+              position: 'relative',
+              width: '24.05vw'
+              }} />
+              <img src="/m_user_pro_tab2.png" alt="" style={{
+              position: 'relative',
+              width: '24.05vw'
+              }} />
+              <img src="/m_user_pro_tab3.png" alt="" style={{
+              position: 'relative',
+              width: '24.05vw'
+              }} />
+            </div>
+
+          <div style={{
+            position: 'relative',
+            top: '44vw',
+            left: '5vw'
+            }}>
+            <span style={{color: 'white'}}>Total Calorie burn :</span>
+            <span style={{color: '#61FF00'}}>100 kcal</span><br/>
+
+            <span style={{color: 'white',marginTop: '20vw'}}>Total days :</span>
+            <span style={{color: '#61FF00'}}>111</span><br/>
+          </div>  
+        </div>
+
+        <div style={{
+          // border: '1px green solid',
+          position: 'absolute',
+          top: '78vw',
+          left: '5.9vw'
+          }}>
+          <img src="/m_user_tab2.png" alt="" style={{marginRight:'2vw', maxWidth: '43.76vw' }} />
+          <img src="/m_user_tab3.png" alt="" style={{maxWidth: '43.76vw'}}/>
+
+          <img src="/m_user_tab4.png" alt="" style={{marginRight:'2vw',marginTop: '1vw',maxWidth: '43.76vw'}}/>
+          <img src="/m_user_tab5.png" alt="" style={{marginTop: '1vw',maxWidth: '43.76vw'}}/>
+
+          <img src="/m_user_tab6.png" alt="" style={{marginRight:'2vw',marginTop: '1vw',maxWidth: '43.76vw'}}/>
+          <img src="/m_user_tab7.png" alt="" style={{marginTop: '1vw',maxWidth: '43.76vw'}}/>
+        </div>
+
+      </div>  
+        
+      
 
 
 
