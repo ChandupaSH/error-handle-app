@@ -1,0 +1,7 @@
+input:active{
+    border: none;
+}
+
+#inputx:hover {
+    background-color:aqua
+}

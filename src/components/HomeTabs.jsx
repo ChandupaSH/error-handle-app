@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const HomeTabs = () => {
+    const navigate = useNavigate()
   return (
     <div style={{
         width: '100%',
@@ -102,7 +104,10 @@ const HomeTabs = () => {
         top: '20%',
         left: '24%',
         fontSize: '3vh'
-    }}>Register</button>
+    }} onClick={() => {
+        navigate('/reg')
+    }}
+    >Register</button>
   </div>
 
 <div style={{

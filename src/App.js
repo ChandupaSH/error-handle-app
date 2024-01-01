@@ -5,6 +5,7 @@ import UserPage from './scenes/UserPage'
 import WorkoutPage from './scenes/WorkoutPage'
 import TodayWPage from './scenes/TodayWPage'
 import QrPage from './scenes/QrPage'
+import Register from './scenes/Register'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/qr' element = { <QrPage/>}/>
           <Route path='/workout' element = { <WorkoutPage/>}/>
           <Route path='/todayw' element = { <TodayWPage/>}/>
+          <Route path='/reg' element = { <Register/>}/>
         </Routes>
       </Router> 
   )
