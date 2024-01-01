@@ -43,9 +43,10 @@ const AdminM = () => {
           left: '5vw',
           height: '40vw',
           backgroundColor: '#393939',
-          outline: '1px white solid',
+          outline: 'none',
+          border: '1px solid white',
           borderRadius: '20px',
-          fontSize: '20px'
+          fontSize: '18px'
         }}>
           <span style={{
             color: '#52FF00',
@@ -71,9 +72,10 @@ const AdminM = () => {
             // left: '5vw',
             height: '10vh',
             backgroundColor: '#606060',
-            outline: '1px white solid',
-            borderRadius: '20px',
-            fontSize: '20px',
+            outline: 'none',
+            border: '1px solid white',
+            borderRadius: '10px',
+            fontSize: '18px',
             marginLeft: '2vw',
             textAlign: 'center'
           }}>
@@ -94,9 +96,10 @@ const AdminM = () => {
             // left: '5vw',
             height: '10vh',
             backgroundColor: '#606060',
-            outline: '1px white solid',
-            borderRadius: '20px',
-            fontSize: '20px',
+            outline: 'none',
+            border: '1px solid white',
+            borderRadius: '10px',
+            fontSize: '18px',
             textAlign: 'center'
           }}>
             <span >
@@ -115,9 +118,10 @@ const AdminM = () => {
             // left: '5vw',
             height: '10vh',
             backgroundColor: '#606060',
-            outline: '1px white solid',
-            borderRadius: '20px',
-            fontSize: '20px',
+            outline: 'none',
+            border: '1px solid white',
+            borderRadius: '10px',
+            fontSize: '18px',
             marginRight: '2vw',
             textAlign: 'center'
           }}>
@@ -144,7 +148,8 @@ const AdminM = () => {
             left: '5vw',
             height: '20vw',
             backgroundColor: '#393939',
-            outline: '1px white solid',
+            outline: 'none',
+            border: '1px solid white',
             borderRadius: '20px',
             fontSize: '20px',
             top: '4vw',
@@ -161,7 +166,8 @@ const AdminM = () => {
             left: '5vw',
             height: '20vw',
             backgroundColor: '#393939',
-            outline: '1px white solid',
+            outline: 'none',
+            border: '1px solid white',
             borderRadius: '20px',
             fontSize: '20px',
             top: '4vw',
