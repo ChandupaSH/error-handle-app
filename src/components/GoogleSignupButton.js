@@ -6,11 +6,11 @@ const GoogleSignupButton = () => {
 
   const onsuccess = (response) => {
     const decoded = jwtDecode(response.credential);
-    console.log(decoded);
+    // console.log(decoded);
   }
 
   const onfail = (err) => {
-    console.log('Login Failed'+err);
+    // console.log('Login Failed'+err);
   }
 
 
