@@ -1,12 +1,14 @@
 
 .button1{
     background-color: orange;  
-    border: 1px white solid,
+    border: 1px white solid;
+    outline: none;
+    
 }
 .button1:active{
-    background-color: rgb(196, 212, 45);
-    border: none;
+    background-color: rgb(146, 105, 17);
+    outline: none;
 }
 .button1:focus{
-    border: none;
+    outline: none;
 }
