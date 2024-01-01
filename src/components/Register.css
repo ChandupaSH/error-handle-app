@@ -7,3 +7,6 @@
     background-color: rgb(196, 212, 45);
     border: none;
 }
+.button1:focus{
+    border: none;
+}
