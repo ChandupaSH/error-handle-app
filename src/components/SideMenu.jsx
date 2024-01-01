@@ -45,7 +45,7 @@ const SideMenu = () => {
                 <li onClick={() => {navigate('/user')}} style={liStyle}>My Account</li>
                 {/* <li onClick={() => {}} style={liStyle}>Suppliments</li> */}
                 <li onClick={() => {}} style={liStyle}>Workouts</li>
-                <li onClick={() => {}} style={liStyle}>Trainers</li>
+                <li onClick={() => {navigate('/admin')}} style={liStyle}>Admin</li>
                 <li onClick={() => {}} style={liStyle}>Contact us</li>
             </ul>
         </Box>

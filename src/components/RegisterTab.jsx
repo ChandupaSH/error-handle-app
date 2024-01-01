@@ -4,58 +4,7 @@ import GoogleSignupButton from '../components/GoogleSignupButton';
 
 const RegisterTab = () => {
 
-    // const top100Films = [
-    //     { title: 'cardio', year: 1994 },
-    //     { title: 'muscle', year: 1972 },
-    //     { title: 'shadded body', year: 1974 },
-    //     { title: 'athletic', year: 2008 },]
 
-        // <div style={{ 
-        //     // border: '1px solid black',
-        //     position: 'relative',
-        //     left: '5%',
-        //     top: '6vw',
-        // }}>
-        //     <span style={{
-        //         color:'white',
-        //         paddingLeft: '2%'
-        //         }}>Weight :</span><br/>
-
-        //     <div style={{
-        //         overflow: 'hidden',
-        //         maxHeight: '70vw'}}>
-        //     <Autocomplete  
-        //         multiple
-        //         id="tags-outlined"
-        //         options={top100Films}
-        //         getOptionLabel={(option) => option.title}
-        //         // defaultValue={[top100Films[1]]}
-        //         filterSelectedOptions
-        //         renderInput={(params) => (
-        //         <TextField
-        //             {...params}
-        //             label="Select your workout"
-        //             placeholder="Favorites"
-        //         />
-        //         )}
-        //         sx={{
-        //             bgcolor: 'white',
-        //             width: '90%',
-        //             marginTop: '5vw',
-        //             fontSize: '10px',
-        //             maxHeight: '50vw'
-        //         }}
-                
-                
-                
-        //     />
-        //     </div>    
-           
-                
-                
-           
-            
-        // </div>
   
     
     
@@ -302,6 +251,8 @@ const RegisterTab = () => {
       
 
        </div>
+
+      
       
     </div>
   )

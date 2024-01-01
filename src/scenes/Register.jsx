@@ -8,6 +8,12 @@ const Register = () => {
         height: '230vw'
     }}>
       <RegisterTab />
+
+      <button style={{
+        position: 'relative',
+        height: '30px',
+        top: '4vw'
+      }}>next</button>
     </div>
   )
 }
