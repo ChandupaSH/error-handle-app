@@ -12,3 +12,21 @@
 .button1:focus{
     outline: none;
 }
+
+input:active{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
