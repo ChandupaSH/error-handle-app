@@ -4,12 +4,12 @@ import { jwtDecode } from "jwt-decode";
 
 const GoogleSignupButton = () => {
 
-  const onsuccess = (response) => {
-    const decoded = jwtDecode(response.credential);
+  const onsuccess = () => {
+    // const decoded = jwtDecode(response.credential);
     // console.log(decoded);
   }
 
-  const onfail = (err) => {
+  const onfail = () => {
     // console.log('Login Failed'+err);
   }
 
