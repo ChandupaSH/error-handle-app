@@ -1,7 +1,9 @@
-input:active{
-    border: none;
-}
 
-#inputx:hover {
-    background-color:aqua
+.button1{
+    background-color: orange;  
+    border: 1px white solid,
+}
+.button1:active{
+    background-color: rgb(196, 212, 45);
+    border: none;
 }

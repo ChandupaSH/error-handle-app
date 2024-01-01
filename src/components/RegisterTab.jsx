@@ -1,4 +1,4 @@
-
+import  './Register.css';
 import React from 'react'
 import GoogleSignupButton from '../components/GoogleSignupButton';
 
@@ -240,7 +240,8 @@ const RegisterTab = () => {
                 />
             </div>
 
-            <button style={{
+            <button 
+            style={{
                 position: 'relative',
                 top:'10vw',
                 left:'5vw',
@@ -248,9 +249,9 @@ const RegisterTab = () => {
                 width:'30vw',
                 borderRadius: '20px',
                 color:'white',
-                backgroundColor: 'orange',
-                border: '1px white solid'
-            }}>
+               
+            }}
+            className='button1'>
                 Sign Up
             </button>
 
@@ -258,7 +259,7 @@ const RegisterTab = () => {
                 width: '100%',
                 position: 'relative',
                 display: 'flex',
-                top:'13vw',
+                top:'12vw',
                 alignItems: 'center'
             }}>
                 <hr style={{
@@ -281,7 +282,7 @@ const RegisterTab = () => {
 
             <div style={{
                 position: 'relative',
-                top:'5vw'
+                top:'1vw'
             }}>
                 <GoogleSignupButton
                 style={{
