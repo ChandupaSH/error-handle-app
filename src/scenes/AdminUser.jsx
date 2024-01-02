@@ -1,5 +1,6 @@
-
+import AddIcon from '@mui/icons-material/Add';
 import React, { useState } from 'react'
+import  '../components/Register.css';
 
 const AdminUser = () => {
     const [isClose1 , setIsClose1] = useState(true)
@@ -13,11 +14,36 @@ const AdminUser = () => {
         color: 'white',
         fontSize: '17px'
     }}>
-        {/* span user */}
-      <span style={{ 
-        fontSize: '30px',
-        marginLeft: '5vw',
-      }}>Users</span>
+       
+
+      <div style={{
+        display: 'flex',
+        alignContent: 'center',
+        justifyContent: 'space-between'
+      }}>
+        <span style={{ 
+            fontSize: '30px',
+            marginLeft: '5vw',
+        }}>Users</span>
+
+        <button style={{
+            display: 'flex',
+            alignItems: 'center',
+            backgroundColor: 'white',
+            marginTop: '2vw',
+            marginRight: '2vw',
+            color: 'black',
+            outline: 'none',
+            border: 'none',
+            borderRadius: '20px',
+            paddingLeft: '10px',
+            opacity: '0.8'
+        }}>
+            <span>Add User</span>
+            <AddIcon style={{fontSize: '25px'}}/>
+        </button>
+      </div>
+      
 
       <div style={{
         width: '100%',
@@ -51,11 +77,12 @@ const AdminUser = () => {
                         marginLeft: '5%',
                         borderRadius: '10px',
                         height: '18vw',
-                        marginTop: '4vw'
+                        marginTop: '4vw',
+                        paddingTop: '8px'
                     }}>
                         <span style={{ 
                             marginLeft: '3vw',
-                            marginTop: '2vw'
+                            paddingTop: '10px'
                         }}>Age : 25</span><br/>
                         <div style={{
                             backgroundColor: '#200505',
@@ -64,7 +91,8 @@ const AdminUser = () => {
                             paddingLeft: '2%',
                             width: '90%',
                             marginLeft: '3%',
-                            marginTop: '2vw'
+                            marginTop: '2vw',
+                            textAlign: 'center'
                         }}>Requrired</div>
                     </div>
 
@@ -128,6 +156,19 @@ const AdminUser = () => {
                         }}>
                             <span>Change the date and add paymount</span>
                         </div>
+
+                        <button style={{
+                            marginLeft: '5vw',
+                            marginTop: '2vw',
+                            width: '30vw',
+                            fontSize: '16px',
+                            height: '30px',
+                            backgroundColor: '#970000',
+                            border: 'none',
+                            outline: 'none',
+                            borderRadius: '15px',
+                            color: 'white'
+                        }}>Delete</button>
                 </div>}
 
             </div>
@@ -163,7 +204,8 @@ const AdminUser = () => {
                         marginLeft: '5%',
                         borderRadius: '10px',
                         height: '18vw',
-                        marginTop: '4vw'
+                        marginTop: '4vw',
+                        paddingTop: '8px'
                     }}>
                         <span style={{ 
                             marginLeft: '3vw',
@@ -240,6 +282,19 @@ const AdminUser = () => {
                         }}>
                             <span>Change the date and add paymount</span>
                         </div>
+
+                        <button style={{
+                            marginLeft: '5vw',
+                            marginTop: '2vw',
+                            width: '30vw',
+                            fontSize: '16px',
+                            height: '30px',
+                            backgroundColor: '#970000',
+                            border: 'none',
+                            outline: 'none',
+                            borderRadius: '15px',
+                            color: 'white'
+                        }}>Delete</button>
                 </div>}
 
             </div>
@@ -275,7 +330,8 @@ const AdminUser = () => {
                         marginLeft: '5%',
                         borderRadius: '10px',
                         height: '18vw',
-                        marginTop: '4vw'
+                        marginTop: '4vw',
+                        paddingTop: '8px'
                     }}>
                         <span style={{ 
                             marginLeft: '3vw',
@@ -352,6 +408,19 @@ const AdminUser = () => {
                         }}>
                             <span>Change the date and add paymount</span>
                         </div>
+
+                        <button style={{
+                            marginLeft: '5vw',
+                            marginTop: '2vw',
+                            width: '30vw',
+                            fontSize: '16px',
+                            height: '30px',
+                            backgroundColor: '#970000',
+                            border: 'none',
+                            outline: 'none',
+                            borderRadius: '15px',
+                            color: 'white'
+                        }}>Delete</button>
                 </div>}
 
             </div>
@@ -387,7 +456,8 @@ const AdminUser = () => {
                         marginLeft: '5%',
                         borderRadius: '10px',
                         height: '18vw',
-                        marginTop: '4vw'
+                        marginTop: '4vw',
+                        paddingTop: '8px'
                     }}>
                         <span style={{ 
                             marginLeft: '3vw',
@@ -464,6 +534,19 @@ const AdminUser = () => {
                         }}>
                             <span>Change the date and add paymount</span>
                         </div>
+
+                        <button style={{
+                            marginLeft: '5vw',
+                            marginTop: '2vw',
+                            width: '30vw',
+                            fontSize: '16px',
+                            height: '30px',
+                            backgroundColor: '#970000',
+                            border: 'none',
+                            outline: 'none',
+                            borderRadius: '15px',
+                            color: 'white'
+                        }}>Delete</button>
                 </div>}
 
             </div>
