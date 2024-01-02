@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const AdminM = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div style={{
       backgroundColor: '#0F0F0F',
@@ -156,7 +160,7 @@ const AdminM = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center'
-          }}>
+          }} onClick={() => navigate('/admin-user')}>
             <span >Users</span>
           </div>
 

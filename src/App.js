@@ -7,6 +7,7 @@ import TodayWPage from './scenes/TodayWPage'
 import QrPage from './scenes/QrPage'
 import Register from './scenes/Register'
 import AdminM from './scenes/AdminM'
+import AdminUser from './scenes/AdminUser'
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/todayw' element = { <TodayWPage/>}/>
           <Route path='/reg' element = { <Register/>}/>
           <Route path='/admin' element = { <AdminM/>}/>
+          <Route path='/admin-user' element = { <AdminUser/>}/>
         </Routes>
       </Router> 
   )
