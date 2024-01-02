@@ -1,12 +1,12 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
 // import { useSelector } from 'react-redux'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 // import { qrresultSelector } from '../slices/slice.js';
 
 const UserPage = () => {
   // const qrResult = useSelector(qrresultSelector)
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
   // const isTablet = useMediaQuery('(min-width: 600px )')
   
 
@@ -146,7 +146,7 @@ const UserPage = () => {
           left: '5.9vw'
           }}>
           <img src="/m_user_tab2.png" alt="" style={{marginRight:'2vw', maxWidth: '43.76vw' }} />
-          <img src="/m_user_tab3.png" alt="" style={{maxWidth: '43.76vw'}}/>
+          <img src="/m_user_tab3.png" alt="" style={{maxWidth: '43.76vw'}} onClick={() => navigate('/qr')}/>
 
           <img src="/m_user_tab4.png" alt="" style={{marginRight:'2vw',marginTop: '1vw',maxWidth: '43.76vw'}}/>
           <img src="/m_user_tab5.png" alt="" style={{marginTop: '1vw',maxWidth: '43.76vw'}}/>

@@ -1,14 +1,14 @@
 import React from 'react'
 import QrScanner from '../components/QrScanner'
-import {  useMediaQuery } from '@mui/material'
+// import {  useMediaQuery } from '@mui/material'
 import { useSelector } from 'react-redux'
 import { qrresultSelector } from '../slices/slice'
 import { useNavigate } from 'react-router-dom'
 
 const QrPage = () => {
   const qrResult = useSelector(qrresultSelector)
-  const isTablet = useMediaQuery('(min-width: 500px )')
-  const widthIs = isTablet? '10px':'10px'
+  // const isTablet = useMediaQuery('(min-width: 500px )')
+  // const widthIs = isTablet? '10px':'10px'
   const navigate = useNavigate()
 
   
@@ -42,7 +42,7 @@ const QrPage = () => {
             >back to my account</button>
           </div>
           
-          : <QrScanner style={{widthIs}}/>
+          : <QrScanner />
         }       
         
     </div>
